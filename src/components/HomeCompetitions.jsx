@@ -3,7 +3,7 @@ import { LuCircleArrowRight } from "react-icons/lu";
 import rap from '../assets/events/rap.png'
 import frame from '../assets/events/frame.png'
 import open from '../assets/events/open.png'
-import writing from '../assets/events/Writing.png'
+import writing from '../assets/events/writing.png'
 import { useEffect, useState } from "react";
 
 const HomeCompetitions = () => {
