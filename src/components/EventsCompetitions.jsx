@@ -31,7 +31,7 @@ const HomeEvent = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndexMobile((prev) => (prev + 1) % totalImages);
-    }, 700000);
+    }, 7000);
     return () => clearInterval(interval);
   }, []);
 
@@ -57,7 +57,7 @@ const HomeEvent = () => {
           Literature Fest
         </p>
 
-        <div className='flex mt-[-0.7rem] md:ml-[30.3rem] mb-1'>
+        <div className='flex mt-[-0.7rem] md:ml-[29.3rem] mb-1'>
           <div className='taper-line mt-[1rem]'></div>
           <p className='text-[#a46666] font-crimson text-3xl '>2K25</p>
           <div className='taper-line mt-[1rem]'></div>
@@ -191,67 +191,67 @@ const HomeEvent = () => {
         >
           {/* Each image is its own slide */}
           <div className="flex-shrink-0 w-full flex justify-center relative text-white h-[515px]">
-            <img src={homeImg} className="w-[80%] h-[400px] rounded-lg -translate-x-1" />
-              <div className="absolute z-[14] top-14 left-17 text-4xl fancy-script1 text-center w-[230px]">Kalam  <br/> (Writing Competition)</div>
-              <div className="absolute z-[14] bottom-36 text-2xl left-17 fancy-script2 text-center w-[230px]">Unleash your creativity with words and let your pen do the magic. A chance to express, inspire, and make your thoughts immortal.</div>
+            <img src={homeImg} className="w-[90%] h-[400px] rounded-lg -translate-x-1" />
+              <div className="absolute z-[14] top-14 left-11 text-4xl fancy-script1 text-center w-[230px]">Kalam  <br/> (Writing Competition)</div>
+              <div className="absolute z-[14] bottom-36 text-2xl left-12 fancy-script2 text-center w-[230px]">Unleash your creativity with words and let your pen do the magic. A chance to express, inspire, and make your thoughts immortal.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-150"  />
+                <img src={register} className="absolute bottom-[19px] -left-8  scale-150"  />
               </div>
           </div>
           <div className="flex-shrink-0 w-full flex justify-center relative text-white h-[515px]">
-            <img src={homeImg2} className="w-[80%] h-[400px] rounded-lg" />
-              <div className="absolute z-[14] top-20 left-24 text-4xl fancy-script1 text-center">Clash of Bars  <br/> (Rap Battle)</div>
-              <div className="absolute z-[14] bottom-42 text-2xl left-17 fancy-script2 text-center w-[230px]">Drop your rhymes, spit your fire, and own the stage. It’s time to prove who’s the real wordsmith of beats and bars.</div>
+            <img src={homeImg2} className="w-[90%] h-[400px] rounded-lg" />
+              <div className="absolute z-[14] top-20 left-18 text-4xl fancy-script1 text-center">Clash of Bars  <br/> (Rap Battle)</div>
+              <div className="absolute z-[14] bottom-42 text-2xl left-11 fancy-script2 text-center w-[230px]">Drop your rhymes, spit your fire, and own the stage. It’s time to prove who’s the real wordsmith of beats and bars.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-150"  />
+                <img src={register} className="absolute bottom-[19px] -left-8  scale-150"  />
               </div>
           </div>
           <div className="flex-shrink-0 w-full flex justify-center relative text-white h-[515px]">
-            <img src={homeImg3} className="w-[80%] h-[400px] rounded-lg translate-x-1" />
-              <div className="absolute z-[14] top-20 left-28 text-4xl fancy-script1 text-center">Aaja Bhidle <br/>(Debate) </div>
-              <div className="absolute z-[14] bottom-46 text-2xl left-17 fancy-script2 text-center w-[230px]">Step up with your logic, wit, and courage to clash with ideas. Win not just with words, but with the power of persuasion.</div>
+            <img src={homeImg3} className="w-[90%] h-[400px] rounded-lg translate-x-1" />
+              <div className="absolute z-[14] top-20 left-21.5 text-4xl fancy-script1 text-center">Aaja Bhidle <br/>(Debate) </div>
+              <div className="absolute z-[14] bottom-46 text-2xl left-12 fancy-script2 text-center w-[230px]">Step up with your logic, wit, and courage to clash with ideas. Win not just with words, but with the power of persuasion.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-150"  />
+                <img src={register} className="absolute bottom-[19px] -left-8  scale-150"  />
               </div>
           </div>
           <div className="flex-shrink-0 w-full flex justify-center relative text-white h-[515px]">
-            <img src={homeImg} className="w-[80%] h-[400px] rounded-lg -translate-x-1" />
-              <div className="absolute z-[14] top-14 left-24 text-4xl fancy-script1 text-center">Wah Wah   <br/>Kya Baat Hai <br /> (Open Mic)</div>
-              <div className="absolute z-[14] bottom-37 text-2xl left-17 fancy-script2 text-center w-[230px]">Be it poetry, stand-up, or a heartfelt story—this stage is yours. Shine under the spotlight and let the audience say, “Wah Wah Kya Baat Hai!”</div>
+            <img src={homeImg} className="w-[90%] h-[400px] rounded-lg -translate-x-1" />
+              <div className="absolute z-[14] top-14 left-18 text-4xl fancy-script1 text-center">Wah Wah   <br/>Kya Baat Hai <br /> (Open Mic)</div>
+              <div className="absolute z-[14] bottom-37 text-2xl left-11.5 fancy-script2 text-center w-[230px]">Be it poetry, stand-up, or a heartfelt story—this stage is yours. Shine under the spotlight and let the audience say, “Wah Wah Kya Baat Hai!”</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-150"  />
+                <img src={register} className="absolute bottom-[19px] -left-8  scale-150"  />
               </div>
           </div>
           <div className="flex-shrink-0 w-full flex justify-center relative text-white h-[515px]">
-            <img src={homeImg2} className="w-[80%] h-[400px] rounded-lg " />
-              <div className="absolute z-[14] top-24 left-28 text-4xl fancy-script1 text-center">Antakshri</div>
-              <div className="absolute z-[14] bottom-46 text-2xl left-17 fancy-script2 text-center w-[230px]">Where music, fun, and nostalgia come alive! Sing your heart out and let the rhythm of melodies decide the winner.</div>
+            <img src={homeImg2} className="w-[90%] h-[400px] rounded-lg " />
+              <div className="absolute z-[14] top-24 left-23 text-4xl fancy-script1 text-center">Antakshri</div>
+              <div className="absolute z-[14] bottom-46 text-2xl left-11.5 fancy-script2 text-center w-[230px]">Where music, fun, and nostalgia come alive! Sing your heart out and let the rhythm of melodies decide the winner.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-150"  />
+                <img src={register} className="absolute bottom-[19px] -left-8  scale-150"  />
               </div>
           </div>
           <div className="flex-shrink-0 w-full flex justify-center relative text-white h-[515px]">
-            <img src={homeImg3} className="w-[80%] h-[400px] rounded-lg translate-x-1" />
-              <div className="absolute z-[14] top-18 left-28 text-4xl fancy-script1 text-center">Sukkon-E-  <br/>Shaam <br/>(Mushaira)</div>
-              <div className="absolute z-[14] bottom-39 text-2xl left-17 fancy-script2 text-center w-[230px]">An evening of soulful poetry, laughter, and emotions. Celebrate the beauty of Urdu and Hindi verses under one roof.</div>
+            <img src={homeImg3} className="w-[90%] h-[400px] rounded-lg translate-x-1" />
+              <div className="absolute z-[14] top-18 left-21 text-4xl fancy-script1 text-center">Sukkon-E-  <br/>Shaam <br/>(Mushaira)</div>
+              <div className="absolute z-[14] bottom-39 text-2xl left-11.5 fancy-script2 text-center w-[230px]">An evening of soulful poetry, laughter, and emotions. Celebrate the beauty of Urdu and Hindi verses under one roof.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-150"  />
+                <img src={register} className="absolute bottom-[19px] -left-8  scale-150"  />
               </div>
           </div>
           <div className="flex-shrink-0 w-full flex justify-center relative text-white h-[515px]">
-            <img src={homeImg} className="w-[80%] h-[400px] rounded-lg -translate-x-1" />
-              <div className="absolute z-[14] top-16 left-38 text-4xl fancy-script1 text-center">Vlog   <br/>Fest </div>
-              <div className="absolute z-[14] bottom-44 text-2xl left-17 fancy-script2 text-center w-[230px]">Showcase your creativity behind the lens and storytelling on screen. Capture the world your way and let your vlog steal the spotlight.</div>
+            <img src={homeImg} className="w-[90%] h-[400px] rounded-lg -translate-x-0.5" />
+              <div className="absolute z-[14] top-16 left-33 text-4xl fancy-script1 text-center">Vlog   <br/>Fest </div>
+              <div className="absolute z-[14] bottom-44 text-2xl left-11.5 fancy-script2 text-center w-[230px]">Showcase your creativity behind the lens and storytelling on screen. Capture the world your way and let your vlog steal the spotlight.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-150"  />
+                <img src={register} className="absolute bottom-[19px] -left-8  scale-150"  />
               </div>
           </div>
           <div className="flex-shrink-0 w-full flex justify-center relative text-white h-[515px]">
-            <img src={homeImg2} className="w-[80%] h-[400px] rounded-lg -translate-x-1" />
-              <div className="absolute z-[14] top-19 left-33 text-4xl fancy-script1 text-center">Frame <br/>Clickers </div>
-              <div className="absolute z-[14] bottom-46 text-2xl left-17 fancy-script2 text-center w-[230px]">One click, endless stories! Bring your vision to life through photography and frame the moments that speak louder than words.</div>
+            <img src={homeImg2} className="w-[90%] h-[400px] rounded-lg translate-x-0.5" />
+              <div className="absolute z-[14] top-19 left-28 text-4xl fancy-script1 text-center">Frame <br/>Clickers </div>
+              <div className="absolute z-[14] bottom-46 text-2xl left-11.5 fancy-script2 text-center w-[230px]">One click, endless stories! Bring your vision to life through photography and frame the moments that speak louder than words.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-150"  />
+                <img src={register} className="absolute bottom-[19px] -left-8  scale-150"  />
               </div>
           </div>
           

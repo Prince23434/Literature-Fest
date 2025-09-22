@@ -78,13 +78,17 @@ const HomeSpeakers = () => {
         </div>
 
         <div
-                className="relative w-11/12 md:w-10/12 mx-auto overflow-hidden pt-16"
+                className="relative w-10/12 mx-auto overflow-hidden pt-16"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
             >
                 {/* Fade overlays with #f8f4f4 */}
-                <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-[#e8b9b0] to-transparent z-10" />
-                <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-[#e8b9b0] to-transparent z-10" />
+                {/* Left overlay */}
+                <div className="pointer-events-none absolute top-0 left-[0] h-full w-24 bg-gradient-to-r from-[#e8b9b0] to-transparent z-[14]" />
+
+                {/* Right overlay */}
+                <div className="pointer-events-none absolute top-0 right-[0] h-full w-24 bg-gradient-to-l from-[#e8b9b0] to-transparent z-[14] mr-[-1px] md:mr-0" />
+
 
                 {/* Sliding track */}
                 <div ref={trackRef} className="flex gap-8 transition-none w-max">

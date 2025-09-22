@@ -3,6 +3,71 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, Star, Users, Trophy } from 'lucide-react';
 
 const RegistrationPage = () => {
+
+
+
+  function loadScript(src) {
+  return new Promise((resolve) => {
+    const script = document.createElement("script");
+    script.src = src;
+    script.onload = () => resolve(true);
+    script.onerror = () => resolve(false);
+    document.body.appendChild(script);
+  });
+}
+
+const handlePayment = async () => {
+  const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js");
+  if (!res) {
+    alert("Razorpay SDK failed to load. Are you online?");
+    return;
+  }
+
+  // Create order from backend
+  const response = await fetch("http://localhost:5000/create-order", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ amount: amount * 100 }), // Razorpay works in paise
+  });
+
+  const data = await response.json();
+
+  const options = {
+    key: "YOUR_RAZORPAY_KEY_ID", // from Razorpay dashboard
+    amount: data.amount,
+    currency: "INR",
+    name: "RTU Literature Fest",
+    description: "Event Registration Payment",
+    order_id: data.id,
+    handler: async function (response) {
+      // Send form data + payment response to backend
+      await fetch("http://localhost:5000/save-registration", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formData: formData,
+          payment: response,
+        }),
+      });
+      alert("Payment Successful! Registration Saved.");
+    },
+    theme: {
+      color: "#3399cc",
+    },
+  };
+
+  const paymentObject = new window.Razorpay(options);
+  paymentObject.open();
+};
+
+
+
+
+
+
+
+
+
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     event: "Kalam",
@@ -118,7 +183,7 @@ const RegistrationPage = () => {
         </div>
 
         <div className="rounded-lg border bg-card text-card-foreground shadow-sm bg-gradient-card backdrop-blur-sm shadow-elegant p-8 animate-fade-in-up">
-          <form onSubmit={handleSubmit} className="space-y-10">
+          <form onSubmit={handlePayment} className="space-y-10">
             {/* Event Selection */}
             <div className="space-y-6">
               <div className="flex items-center gap-3 mb-4">
@@ -406,7 +471,7 @@ const RegistrationPage = () => {
             )}
 
             {/* Submit Button */}
-            <div className="flex justify-center pt-8">
+            <div className="flex justify-center pt-8 scale-75 md:scale-100">
               <button
                 type="submit"
                 className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-lg text-lg font-semibold ring-offset-background transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transform hover:scale-105 border border-primary/20 px-12 py-4 min-h-[56px] bg-[#64b5f3]"

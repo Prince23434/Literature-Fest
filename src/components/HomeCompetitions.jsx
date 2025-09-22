@@ -147,13 +147,19 @@ const HomeCompetitions = () => {
                     <img src={rap} className="w-[80%] h-[400px] rounded-lg translate-x-1" />
                   </div>
                   <div className="flex-shrink-0 w-full flex justify-center relative text-white">
-                    <img src={frame} className="w-[80%] h-[400px] rounded-lg" />
+                    <img src={frame} className="w-[90%] h-[400px] rounded-lg" />
                   </div>
                   <div className="flex-shrink-0 w-full flex justify-center relative text-white">
-                    <img src={open} className="w-[80%] h-[400px] rounded-lg translate-x-1" />
+                    <img src={open} className="w-[90%] h-[400px] rounded-lg translate-x-1" />
                   </div>
                   <div className="flex-shrink-0 w-full flex justify-center relative text-white">
-                    <img src={writing} className="w-[80%] h-[400px] rounded-lg translate-x-2" />
+                    <img src={writing} className="w-[80%] h-[400px] rounded-lg translate-x-1.5 translate-y-2" />
+                  </div>
+                  <div className="flex-shrink-0 w-full flex justify-center relative text-white">
+                    <img src={writing} className="w-[80%] h-[400px] rounded-lg " />
+                  </div>
+                  <div className="flex-shrink-0 w-full flex justify-center relative text-white">
+                    <img src={writing} className="w-[80%] h-[400px] rounded-lg translate-x-1" />
                   </div>
                   <div className="flex-shrink-0 w-full flex justify-center relative text-white">
                     <img src={writing} className="w-[80%] h-[400px] rounded-lg " />

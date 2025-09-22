@@ -4,7 +4,7 @@ import homeCityImage from '../assets/temple.webp'
 
 const Home = ({title}) => {
   return (
-    <div className="relative w-full ">
+    <div className="relative w-full pb-7 md:pb-0">
       {/* Background image */}
       <img
         src={homeImage}
@@ -28,28 +28,30 @@ const Home = ({title}) => {
         <p
           className={
             title === "25-26th Sept 2025"
-              ? "text-[#3f4782] md:text-2xl tracking-widest -mt-2 sm:-mt-5 font-bold myText text-lg"
-              : "text-[#a46666] md:text-5xl tracking-widest -mt-2 sm:-mt-5 font-bold myText text-lg"
+              ? "text-[#3f4782] md:text-2xl tracking-widest -mt-4 sm:-mt-5 font-bold myText"
+              : "text-[#a46666] md:text-5xl tracking-widest -mt-3 sm:-mt-5 font-bold myText text-lg"
           }
         >
           {title}
         </p>
 
-        <p className="myText text-3xl md:text-5xl lg:text-6xl text-[#a46666] tracking-wide font-light md:ml-0 ml-[-2rem] md:translate-0 translate-x-5">
+        <p className="myText text-2xl md:text-5xl lg:text-6xl text-[#a46666] tracking-wide font-light mx-auto whitespace-nowrap md:mt-0 -mt-1">
           Literature Fest
         </p>
 
-        <p className="myText text-4xl lg:text-5xl text-[#a46666] tracking-wide flex justify-center items-baseline gap-1 sm:gap-2">
+
+        <p className="myText text-2xl lg:text-5xl text-[#a46666] tracking-wide flex justify-center items-baseline gap-1 sm:gap-2 whitespace-nowrap md:mt-0 -mt-1">
           <sup className="text-[#3f4782] -mt-4 sm:-mt-6 md:-mt-8 text-base md:text-xl font-sans">
-            &
+            &amp;
           </sup>
           Book Fair
         </p>
 
-        <p className="myText text-lg md:text-2xl lg:text-3xl text-[#3f4782] tracking-widest mt-1 sm:mt-2 md:ml-0 ml-[-9rem] md:translate-0 translate-x-18">
+
+        <p className="myText md:text-2xl lg:text-3xl text-[#3f4782] tracking-widest -mt-0.5 sm:mt-2 md:ml-0 ml-[-8.5rem] md:translate-0 translate-x-18">
           Rajasthan Technical University
         </p>
-        <p className="myText text-lg md:text-2xl lg:text-3xl text-[#3f4782] tracking-widest">
+        <p className="myText md:text-2xl lg:text-3xl text-[#3f4782] tracking-widest">
           KOTA
         </p>
       </div>

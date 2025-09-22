@@ -83,7 +83,7 @@ const HomeGlimpse = () => {
             {reelUrls.map((url, i) => (
             <div
                 key={i}
-                className={`${i === current ? "block" : "hidden"} w-[80%]`}
+                className={`${i === current ? "block" : "hidden"} w-[80%] ml-3`}
             >
                 <InstagramEmbed url={url} />
             </div>

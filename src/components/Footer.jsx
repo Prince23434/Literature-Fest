@@ -23,7 +23,7 @@ const Footer = ({title}) => {
     };
 
   return (
-    <div className={`-mt-10 relative bg-white ${title === 'home' ? 'md:pt-0' : 'md:pt-16'}`}>
+    <div className={`-mt-10 relative bg-white ${title === 'home' ? 'md:pt-0' : 'pt-16'}`}>
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-11/12 mx-auto gap-10'>
             {/* Social */}
             <div className='flex flex-col gap-5'>
@@ -112,7 +112,7 @@ const Footer = ({title}) => {
         <img src={footer} className='scale-100 -translate-y-8 md:translate-0 md:scale-100 md:w-full md:-translate-y-40 absolute z-[-10]' />
 
         {/* Bottom bar */}
-        <div className='bg-[#e8b9b0] text-sm sm:text-xl h-24 w-full flex flex-col justify-center items-center absolute bottom-[-14.4rem] md:bottom-[-33.3rem] z-[10]'>
+        <div className='bg-[#e8b9b0] text-sm sm:text-xl h-24 w-full flex flex-col justify-center items-center absolute bottom-[-12.9rem] md:bottom-[-33.3rem] z-[10]'>
             <p>RTU Literature Fest | All Rights Reserved</p>
             <p>RTU Literature Fest is an initiative by Literature Club, RTU</p>
         </div>

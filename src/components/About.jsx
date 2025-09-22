@@ -62,7 +62,7 @@ const About = () => {
                 This transformation marked the extension of the club’s scope beyond Hindi, welcoming literature of diverse languages, genres, and forms. His vision helped the club evolve into an inclusive platform that continues to encourage creativity, expression, and literary exploration among students.
             </div>
 
-            <img src={logo2} className='absolute md:top-17 top-1 -right-33 md:-right-43 h-[220px] z-[12]' />
+            <img src={logo2} className='absolute md:top-17 top-1 -right-33 md:-right-43 md:h-[220px] z-[12]' />
 
             {/* Right Image Card */}
             <div className='bg-[#e8b9b0] h-auto lg:h-[420px] w-full lg:w-[26%] font-canva-sans p-4 rounded-2xl flex flex-col text-center gap-3 z-[11]'>
@@ -95,8 +95,8 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='rounded-full h-[160px] w-[160px] absolute md:top-4 -top-14 -left-4 md:-left-10 z-[12] overflow-hidden'>
-                    <img src={logo3} className='translate-y-9 scale-230' />
+                <div className='rounded-full md:h-[160px] md:w-[160px] h-[100px] w-[100px] absolute md:top-4 -top-8 -left-4 md:-left-10 z-[12] overflow-hidden'>
+                    <img src={logo3} className='translate-y-5 md:translate-y-9 scale-230' />
                 </div>
 
                     {/* Text Content */}

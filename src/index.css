@@ -196,7 +196,9 @@ input::placeholder,textarea::placeholder {
   }
 }
 
-
+.text-destructive{
+  color: red;
+}
 
 /* Literature Fest Design System */
 @layer base {

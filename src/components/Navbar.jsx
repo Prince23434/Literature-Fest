@@ -37,9 +37,9 @@ const Navbar = () => {
 
         {/* Register Button (hidden on small screens) */}
         <div className="flex gap-10 relative">
-          <div className="text-2xl translate-y-1 text-[#660808] underline hover:font-bold absolute right-75 cursor-pointer font-medium"
+          <div className="text-2xl translate-y-1 text-[#660808] underline hover:font-bold absolute right-75 cursor-pointer font-medium hidden md:block"
             onClick={() => window.open("https://drive.google.com/file/d/1vJoa1AIRr5S4pk_AqFTFUUevBtP2jSi-/view?usp=drive_link", "_blank")}>Schedule </div>
-          <div className="text-2xl translate-y-1 text-[#660808] underline hover:font-bold absolute right-45 cursor-pointer font-medium"
+          <div className="text-2xl translate-y-1 text-[#660808] underline hover:font-bold absolute right-45 cursor-pointer font-medium hidden md:block"
            onClick={() => window.open("https://drive.google.com/file/d/1s-AJdS-bWzsDhJNIA22lelvz_RVImboW/view?usp=drive_link", "_blank")} >RuleBook</div>
           <button className="hidden md:block bg-[#b1dfe8] rounded-full px-5 py-2 text-lg lg:text-xl cursor-pointer hover:bg-[#31ceed] transition-all duration-175" onClick={clickHandler2} >
             Register Now
@@ -80,44 +80,46 @@ const Navbar = () => {
       >
         <div className="flex flex-col items-center gap-4 py-4 bg-[#e8b9b0] text-[#660808] text-lg font-medium">
           <NavLink to='/'>
-            <div
-              className="hover:text-[#3f4782] cursor-pointer"
-              onClick={handleLinkClick}
-            >
+            <div className="hover:text-[#3f4782] cursor-pointer" onClick={handleLinkClick}>
               Home
             </div>
           </NavLink>
           <NavLink to='/about'>
-            <div
-              className="hover:text-[#3f4782] cursor-pointer"
-              onClick={handleLinkClick}
-            >
+            <div className="hover:text-[#3f4782] cursor-pointer" onClick={handleLinkClick}>
               About
             </div>
           </NavLink>
           <NavLink to='/event'>
-            <div
-              className="hover:text-[#3f4782] cursor-pointer"
-              onClick={handleLinkClick}
-            >
+            <div className="hover:text-[#3f4782] cursor-pointer" onClick={handleLinkClick}>
               Events
             </div>
           </NavLink>
           <NavLink to='/contact'>
-            <div
-              className="hover:text-[#3f4782] cursor-pointer"
-              onClick={handleLinkClick}
-            >
+            <div className="hover:text-[#3f4782] cursor-pointer" onClick={handleLinkClick}>
               Contact Us
             </div>
           </NavLink>
-          
-          
-          
-          
+
+          {/* Schedule Link */}
+          <div
+            className="hover:text-[#3f4782] cursor-pointer underline"
+            onClick={() => window.open("https://drive.google.com/file/d/1vJoa1AIRr5S4pk_AqFTFUUevBtP2jSi-/view?usp=drive_link", "_blank")}
+          >
+            Schedule
+          </div>
+
+          {/* RuleBook Link */}
+          <div
+            className="hover:text-[#3f4782] cursor-pointer underline"
+            onClick={() => window.open("https://drive.google.com/file/d/1s-AJdS-bWzsDhJNIA22lelvz_RVImboW/view?usp=drive_link", "_blank")}
+          >
+            RuleBook
+          </div>
+
+          {/* Register Button */}
           <button
             className="bg-[#b1dfe8] rounded-full px-5 py-2 text-lg"
-            onClick={handleLinkClick}
+            onClick={() => navigate("/registration")}
           >
             Register Now
           </button>

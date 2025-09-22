@@ -98,79 +98,79 @@ const AboutTeam = () => {
                 Team
             </p>
         </div>
-        <div className='fancy-script2 text-center text-[90px] -ml-4 md:ml-0 md:text-9xl pt-5 text-[#a46665]'>Coordinators</div>
+        <div className='fancy-script2 text-center text-[70px] -ml-4 md:ml-0 md:text-9xl pt-5 text-[#a46665]'>Coordinators</div>
         <div className='flex w-10/12 mx-auto justify-between pt-14 text-center text-[#a46665] myText ml-50 md:flex-row md:gap-0 gap-20 flex-col'>
             <div className="-translate-x-48.5 md:translate-0">
-                <div className='h-[500px] w-[400px]  rounded-4xl relative z-[12] overflow-hidden'>
-                    <img src={img} className='z-[10] scale-125 ' />
+                <div className='md:h-[500px] md:w-[400px] rounded-4xl relative z-[12] overflow-hidden md:translate-0 translate-x-6'>
+                    <img src={img} className='z-[10] scale-125' />
                 </div>
-                <p className='text-7xl translate-x-7 md:translate-0 md:-ml-20'>Vinayak Sharma</p>
-                <p className='text-5xl translate-x-7 md:translate-0 md:-ml-20 pt-2'>Coordinator</p>
+                <p className='text-4xl md:text-7xl translate-x-6 md:translate-0 md:-ml-20'>Vinayak Sharma</p>
+                <p className='text-3xl md:text-5xl translate-x-6 md:translate-0 md:-ml-20 pt-2'>Coordinator</p>
             </div>
             <div className="-translate-x-48.5 md:translate-0">
-                <div className='h-[500px] w-[400px]  rounded-4xl relative z-[12] overflow-hidden'>
+                <div className='md:h-[500px] md:w-[400px]  rounded-4xl relative z-[12] overflow-hidden md:translate-0 translate-x-6'>
                     <img src={img0} className='z-[10] scale-175 -translate-x-12 -translate-y-22' />
                 </div>
-                <p className='text-7xl translate-x-5 md:translate-0 md:-ml-20'>Kartik Maheswari</p>
-                <p className='text-5xl translate-x-7 md:translate-0 md:-ml-20 pt-2'>Co-Coordinator</p>
+                <p className='text-4xl md:text-7xl whitespace-nowrap translate-x-6 md:translate-0 md:-ml-20'>Kartik Maheswari</p>
+                <p className='text-3xl md:text-5xl translate-x-6 md:translate-0 md:-ml-20 pt-2'>Co-Coordinator</p>
             </div>
         </div>
         <div className='bg-white mt-10 pb-20'>
-            <div className='fancy-script2 text-center text-9xl pt-5 text-[#a46665]'>Advisory</div>
+            <div className='fancy-script2 text-center text-[90px] md:text-9xl pt-5 text-[#a46665]'>Advisory</div>
             <div className='flex w-10/12 mx-auto justify-between pt-14 text-center text-[#a46665] myText md:flex-row flex-col md:gap-0 gap-20'>
-                <div className="-translate-x-2 md:translate-0">
+                <div className="-translate-x-6 md:translate-0">
                     <img src={img1}className='h-[400px] w-[300px] rounded-2xl' />
-                    <p className='text-5xl'>Nutan Sharma</p>
+                    <p className='text-4xl'>Nutan Sharma</p>
                 </div>
-                <div className="translate-x-12 md:translate-0">
+                <div className="translate-x-6 md:translate-0">
                     <div className='h-[400px] w-[300px] rounded-2xl relative z-[12] overflow-hidden'>
                         <img src={img2} className='z-[10] scale-175 translate-y-20 translate-x-12 ' />
                     </div>
-                    <p className='text-5xl'>Palak Yadav</p>
+                    <p className='text-4xl'>Palak Yadav</p>
                 </div>
-                <div className="-translate-x-2 md:translate-0">
+                <div className="-translate-x-6 md:translate-0">
                     <img src={img3} className='h-[400px] w-[300px] rounded-2xl' />
-                    <p className='text-5xl'>Yamini Hada</p>
+                    <p className='text-4xl md:translate-0 -translate-x-1'>Yamini Hada</p>
                 </div>
             </div>
         </div>
         <div className='mt-10'>
             <div className='fancy-script2 text-center text-9xl pt-5 text-[#a46665]'>Leads</div>
             <div className='flex w-10/12 mx-auto justify-center pt-14 text-center text-[#a46665] myText flex-wrap gap-20 items-center'>
-                <div className="translate-x-8 md:translate-0">
+                <div className="translate-x-6 md:translate-0">
                     <div className='h-[350px] w-[300px] rounded-2xl relative z-[12] overflow-hidden'>
                         <img src={img4} className="-translate-y-6" />
                     </div>
-                    <p className='text-5xl -ml-4'>Bhumika Nama</p>
-                <p className='text-3xl -ml-8 pt-2'>Event-Lead</p>
+                    <p className='text-4xl'>Bhumika Nama</p>
+                <p className='text-2xl pt-2'>Event-Lead</p>
                 </div>
-                <div className="-translate-x-10 md:translate-0 ml-10">
+                <div className="-translate-x-11 md:translate-0 ml-10">
                     <div className='h-[350px] w-[300px] rounded-2xl relative z-[12] overflow-hidden'>
                         <img src={img5} className="scale-125 translate-y-8 -translate-x-8" />
                     </div>
-                    <p className='text-5xl md:-ml-14'>Abdul Kalam Gori</p>
-                <p className='text-3xl md:-ml-10 pt-2'>Management Lead</p>
+                    <p className='text-4xl'>Abdul Kalam Gori</p>
+                <p className='text-2xl pt-2'>Management Lead</p>
                 </div>
-                <div className="translate-x-2 md:translate-0">
+                <div className="translate-x-1 md:translate-0">
                     <div className='h-[350px] w-[300px] rounded-2xl relative z-[12] overflow-hidden ml-10'>
                         <img src={img6} className="-translate-y-6 translate-x-" />
                     </div>
-                    <p className='text-5xl md:translate-0 translate-x-5'>Harshit Meghwal</p>
-                    <p className='text-3xl md:translate-0 translate-x-5 pt-2'>Event-Lead</p>
+                    <p className='text-4xl md:translate-x-5 translate-x-5'>Harshit Meghwal</p>
+                    <p className='text-2xl md:translate-x-5 translate-x-5 pt-2'>Event-Lead</p>
                 </div>
                 <div className="-translate-x-4 md:translate-0">
                     <div className='h-[350px] w-[300px] rounded-2xl relative z-[12] overflow-hidden -ml-4'>
                         <img src={img7} className="translate-y-6 scale-125" />
                     </div>
-                    <p className='text-5xl -ml-6'>Kapil Meena</p>
-                <p className='text-3xl -ml-10 pt-2'>Graphic Lead</p>
+                    <p className='text-4xl -ml-6'>Kapil Meena</p>
+                <p className='text-2xl -ml-10 pt-2'>Graphic Lead</p>
                 </div>
-                <div className="translate-x-6 md:translate-0">
+                <div className="translate-x-3 md:translate-0">
                     <div className='h-[350px] w-[300px] rounded-2xl relative z-[12] overflow-hidden ml-6'>
                         <img src={img8} className="-translate-y-16" />
                     </div>
-                    <p className='text-5xl'>Aarav Chouhan</p>
-                <p className='text-3xl pt-2'>Videography</p>
+                    <p className='text-4xl md:translate-x-3 translate-x-2'>Aarav Chouhan</p>
+                <p className='text-2xl pt-2 md:translate-x-3 translate-x-2'>Videography</p>
                 </div>
             </div>
         </div>
@@ -178,33 +178,33 @@ const AboutTeam = () => {
             <div className='fancy-script2 text-center text-9xl pt-5 text-[#a46665]'>Core Team</div>
             <div className='flex w-10/12 mx-auto justify-center pt-14 text-center text-[#a46665] myText flex-wrap gap-20 items-center'>
                 <div className='flex flex-col gap-30'>
-                    <div className="-translate-x-7 md:translate-0">
+                    <div className="-translate-x-3 md:translate-0">
                         <img src={img9} className='h-[350px] w-[300px] rounded-2xl' />
-                        <p className='text-5xl'>Shradha Rao</p>
+                        <p className='text-4xl -translate-x-4'>Shradha Rao</p>
                     </div>
                     <div>
-                        <div className='h-[350px] w-[300px] rounded-2xl relative z-[12] overflow-hidden ml-6'>
+                        <div className='h-[350px] w-[300px] rounded-2xl relative z-[12] overflow-hidden ml-6 translate-x-3 md:translate-0'>
                             <img src={img10} className="-translate-y-3 -translate-x-8 scale-125" />
                         </div>
-                        <p className='text-5xl'>Chitra Saini</p>
+                        <p className='text-4xl md:translate-x-3 translate-x-5'>Chitra Saini</p>
                     </div>
                 </div>
                 <div className='flex flex-col gap-30'>
-                    <div className="-translate-x-13 md:translate-0">
+                    <div className="-translate-x-12 md:translate-0">
                         <div className='h-[350px] w-[300px] rounded-2xl relative z-[12] overflow-hidden ml-12'>
                             <img src={img11} className="-translate-y-56" />
                         </div>
-                        <p className='text-5xl md:translate-0 translate-x-6'>Madan Jat</p>
+                        <p className='text-4xl translate-x-6'>Madan Jat</p>
                     </div>
                     <div>
                         <div className='h-[350px] w-[300px] rounded-2xl relative z-[12] overflow-hidden ml-12'>
                             <img src={img12} className="-translate-y-20" />
                         </div>
-                        <p className='text-5xl md:translate-0 translate-x-6 md:-ml-4'>Chitvansh Agarwal</p>
+                        <p className='text-4xl md:translate-x-8.5 translate-x-5 md:-ml-4'>Chitvansh Agarwal</p>
                     </div>
-                    <div className="-translate-x-13 md:translate-0">
+                    <div className="-translate-x-12 md:translate-0">
                         <img src={img13}  className='h-[350px] w-[300px] rounded-2xl ml-12' />
-                        <p className='text-5xl  md:translate-0 translate-x-6'>Chitransh Singh</p>
+                        <p className='text-4xl translate-x-6'>Chitransh Singh</p>
                     </div>
                 </div>
                 <div className='flex flex-col gap-30'>
@@ -212,11 +212,11 @@ const AboutTeam = () => {
                         <div className='h-[350px] w-[300px] rounded-2xl relative z-[12] overflow-hidden ml-12'>
                             <img src={img14} className="-translate-y-30" />
                         </div>
-                        <p className='text-5xl md:translate-0 translate-x-6'>Ayushi Khemka</p>
+                        <p className='text-4xl md:translate-x-7 translate-x-6'>Ayushi Khemka</p>
                     </div>
                     <div>
-                        <img src={img15}  className='h-[350px] w-[300px] rounded-2xl' />
-                        <p className='text-5xl md:translate-0 -translate-x-5'>Dhara Khatri</p>
+                        <img src={img15}  className='h-[350px] w-[300px] rounded-2xl md:translate-x-13 translate-0' />
+                        <p className='text-4xl md:translate-x-8 -translate-x-5'>Dhara Khatri</p>
                     </div>
                 </div>
             </div>
@@ -227,13 +227,13 @@ const AboutTeam = () => {
             </div>
 
             <div
-                className="relative w-11/12 md:w-10/12 mx-auto overflow-hidden pt-16"
+                className="relative w-10/12 md:w-10/12 mx-auto overflow-hidden pt-16"
                 onMouseEnter={() => setIsPaused(true)}
                 onMouseLeave={() => setIsPaused(false)}
             >
                 {/* Fade overlays with #f8f4f4 */}
                 <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-[#f8f4f4] to-transparent z-10" />
-                <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-[#f8f4f4] to-transparent z-10" />
+                <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-[#f8f4f4] to-transparent z-10 md:mr-0 mr-[-1px]" />
 
                 {/* Sliding track */}
                 <div ref={trackRef} className="flex gap-8 transition-none w-max">
