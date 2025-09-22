@@ -51,10 +51,16 @@ const handlePayment = async () => {
       });
       alert("Payment Successful! Registration Saved.");
     },
+    prefill: {
+      name: formData?.name || "Guest User",     // ✅ comes from your registration form
+      email: formData?.email || "guest@mail.com",
+      contact: formData?.phone || "9999999999"  // ✅ Razorpay requires this
+    },
     theme: {
       color: "#3399cc",
     },
   };
+
 
   const paymentObject = new window.Razorpay(options);
   paymentObject.open();
