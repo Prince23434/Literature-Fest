@@ -1,8 +1,8 @@
 import React from 'react'
-import logo1 from '../assets/bank1.jpg'
-import logo2 from '../assets/bhojnam.png'
-import logo3 from '../assets/namo_sandwich.png'
-import logo4 from '../assets/south_shallly.png'
+import logo1 from '../assets/bank1.webp'
+import logo2 from '../assets/bhojnam.webp'
+import logo3 from '../assets/namo_sandwich.webp'
+import logo4 from '../assets/south_shallly.webp'
 
 const HomePartners = () => {
   return (

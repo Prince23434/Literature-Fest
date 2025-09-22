@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { LuCircleArrowLeft, LuCircleArrowRight } from "react-icons/lu";
 
-import homeImg from "../assets/1.png";
-import homeImg2 from "../assets/2.png";
-import homeImg3 from "../assets/3.png";
+import homeImg from "../assets/1.webp";
+import homeImg2 from "../assets/2.webp";
+import homeImg3 from "../assets/3.webp";
 
 const HomeEvent = () => {
   // desktop index (groups of 3)

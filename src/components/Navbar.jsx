@@ -1,6 +1,7 @@
 import { useState } from "react"
-import clubImage from "../assets/clubimage.png"
+import clubImage from "../assets/clubimage.webp"
 import { NavLink, useNavigate } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,10 +14,6 @@ const Navbar = () => {
 
   function clickHandler(){
     navigate("/");
-  }
-
-  function clickHandler2(){
-    navigate("/registration");
   }
 
   return (
@@ -41,9 +38,11 @@ const Navbar = () => {
             onClick={() => window.open("https://drive.google.com/file/d/1vJoa1AIRr5S4pk_AqFTFUUevBtP2jSi-/view?usp=drive_link", "_blank")}>Schedule </div>
           <div className="text-2xl translate-y-1 text-[#660808] underline hover:font-bold absolute right-45 cursor-pointer font-medium hidden md:block"
            onClick={() => window.open("https://drive.google.com/file/d/1s-AJdS-bWzsDhJNIA22lelvz_RVImboW/view?usp=drive_link", "_blank")} >RuleBook</div>
-          <button className="hidden md:block bg-[#b1dfe8] rounded-full px-5 py-2 text-lg lg:text-xl cursor-pointer hover:bg-[#31ceed] transition-all duration-175" onClick={clickHandler2} >
-            Register Now
-          </button>
+          <div className="hidden md:block bg-[#b1dfe8] rounded-full px-5 py-2 text-lg lg:text-xl cursor-pointer hover:bg-[#31ceed] transition-all duration-175">
+            <HashLink smooth to="/event#competitions">
+              Register Now
+            </HashLink>
+          </div>
         </div>
 
         {/* Mobile Hamburger / X button */}
@@ -117,12 +116,11 @@ const Navbar = () => {
           </div>
 
           {/* Register Button */}
-          <button
-            className="bg-[#b1dfe8] rounded-full px-5 py-2 text-lg"
-            onClick={() => navigate("/registration")}
-          >
-            Register Now
-          </button>
+          <div className="bg-[#b1dfe8] rounded-full px-5 py-2 text-lg">
+            <HashLink smooth to="/event#competitions">
+              Register Now
+            </HashLink>
+          </div>
         </div>
       </div>
     </div>

@@ -114,11 +114,11 @@ const ContactTouch = () => {
                 </div>
                 <div className='flex gap-5'>
                 <FaPhoneAlt className='text-red-500 w-[35px] sm:w-[58px] h-[28px] sm:h-[35px]'/>
-                <p className='text-base sm:text-xl font-medium leading-6 text-black myText'>+91 92524 86576</p>
+                <p className='text-base sm:text-xl font-medium leading-6 text-black myText'>+91 8058607229</p>
                 </div>
                 <div className='flex gap-5'>
                 <FaPhoneAlt className='text-red-500 w-[35px] sm:w-[58px] h-[28px] sm:h-[35px]'/>
-                <p className='text-base sm:text-xl font-medium leading-6 text-black myText'>+91 92524 86576</p>
+                <p className='text-base sm:text-xl font-medium leading-6 text-black myText'>+91 7618453227</p>
                 </div>
                 <div className='flex gap-5'>
                 <IoIosMail className='text-red-500 w-[40px] sm:w-[60px] h-[30px] sm:h-[40px]'/>

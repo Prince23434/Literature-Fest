@@ -6,7 +6,9 @@ const EventPage = () => {
   return (
     <div>
         <Home title='Events' />
-        <EventsCompetitions />
+        <div id="competitions">
+          <EventsCompetitions />
+        </div>
         <Footer title='event'/>
     </div>
   )

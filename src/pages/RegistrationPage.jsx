@@ -5,70 +5,7 @@ import { ArrowLeft, Star, Users, Trophy } from 'lucide-react';
 const RegistrationPage = () => {
 
 
-
-  function loadScript(src) {
-  return new Promise((resolve) => {
-    const script = document.createElement("script");
-    script.src = src;
-    script.onload = () => resolve(true);
-    script.onerror = () => resolve(false);
-    document.body.appendChild(script);
-  });
-}
-
-const handlePayment = async () => {
-  const res = await loadScript("https://checkout.razorpay.com/v1/checkout.js");
-  if (!res) {
-    alert("Razorpay SDK failed to load. Are you online?");
-    return;
-  }
-
-  // Create order from backend
-  const response = await fetch("http://localhost:5000/create-order", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ amount: amount * 100 }), // Razorpay works in paise
-  });
-
-  const data = await response.json();
-
-  const options = {
-    key: "YOUR_RAZORPAY_KEY_ID", // from Razorpay dashboard
-    amount: data.amount,
-    currency: "INR",
-    name: "RTU Literature Fest",
-    description: "Event Registration Payment",
-    order_id: data.id,
-    handler: async function (response) {
-      // Send form data + payment response to backend
-      await fetch("http://localhost:5000/save-registration", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          formData: formData,
-          payment: response,
-        }),
-      });
-      alert("Payment Successful! Registration Saved.");
-    },
-    prefill: {
-      name: formData?.name || "Guest User",     // ✅ comes from your registration form
-      email: formData?.email || "guest@mail.com",
-      contact: formData?.phone || "9999999999"  // ✅ Razorpay requires this
-    },
-    theme: {
-      color: "#3399cc",
-    },
-  };
-
-
-  const paymentObject = new window.Razorpay(options);
-  paymentObject.open();
-};
-
-
-
-
+ //here if required add payment gatway
 
 
 

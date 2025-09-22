@@ -1,13 +1,13 @@
-import sl from '../assets/images/sir.png'
-import road1 from '../assets/road1b.png'
-import road2 from '../assets/road2.png'
-import road3 from '../assets/road3.png'
-import img from '../assets/images/ankit.png'
-import img2 from '../assets/images/akshay.png'
-import img3 from '../assets/images/happy.jpg'
-import logo1 from '../assets/ankitlogo.png'
-import logo2 from '../assets/akshaylogo.png'
-import logo3 from '../assets/happylogo.png'
+import sl from '../assets/images/sir.webp'
+import road1 from '../assets/road1b.webp'
+import road2 from '../assets/road2.webp'
+import road3 from '../assets/road3.webp'
+import img from '../assets/images/ankit.webp'
+import img2 from '../assets/images/akshay.webp'
+import img3 from '../assets/images/happy.webp'
+import logo1 from '../assets/ankitlogo.webp'
+import logo2 from '../assets/akshaylogo.webp'
+import logo3 from '../assets/happylogo.webp'
 
 
 const About = () => {
@@ -38,7 +38,6 @@ const About = () => {
                 <div className='font-bold'>
                     <div className='text-3xl lg:text-4xl text-[#3f4782]'>Ankit Mishra</div>
                     <div className='text-xl lg:text-2xl text-[#3f4782]'>Founder</div>
-                    <div className='text-xl lg:text-2xl text-[#3f4782]'>bade saab</div>
                 </div>
             </div>
 
@@ -72,7 +71,6 @@ const About = () => {
                 <div className='font-bold'>
                     <div className='text-3xl lg:text-4xl text-[#3f4782]'>Akshay Mahavar</div>
                     <div className='text-xl lg:text-2xl text-[#3f4782]'>Co Founder</div>
-                    <div className='text-xl lg:text-2xl text-[#3f4782]'>chote saab</div>
                 </div>
             </div>
 
@@ -91,7 +89,6 @@ const About = () => {
                     <div className='font-bold'>
                         <div className='text-3xl lg:text-4xl text-[#3f4782]'>Happy Saini</div>
                         <div className='text-xl lg:text-2xl text-[#3f4782]'>Secretary</div>
-                        <div className='text-xl lg:text-2xl text-[#3f4782]'>ye bhi h kuch</div>
                     </div>
                 </div>
 

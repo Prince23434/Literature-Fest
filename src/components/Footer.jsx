@@ -1,9 +1,10 @@
-import footer from '../assets/Footer.jpg'
-import facebook from '../assets/facebook.png'
-import instagram from '../assets/instagram.png'
-import youtube from '../assets/youtube.png'
-import linkedin from '../assets/Linkedin.png'
+import footer from '../assets/Footer.webp'
+import facebook from '../assets/facebook.webp'
+import instagram from '../assets/instagram.webp'
+import youtube from '../assets/youtube.webp'
+import linkedin from '../assets/Linkedin.webp'
 import { useNavigate } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = ({title}) => {
 
@@ -62,7 +63,11 @@ const Footer = ({title}) => {
                 onClick={() => window.open("https://drive.google.com/file/d/1vJoa1AIRr5S4pk_AqFTFUUevBtP2jSi-/view?usp=drive_link", "_blank")}>    Schedule
                 </div>
                 <div className='text-base sm:text-xl fancy-script2 text-[#1698c8] hover:text-[#5a7be6] cursor-pointer' onClick={() => {navigate("/about")}}>Our Team</div>
-                <div className='text-base sm:text-xl fancy-script2 text-[#1698c8] hover:text-[#5a7be6] cursor-pointer' onClick={() => {navigate("/contact")}}>Registration</div>
+                <div className="text-base sm:text-xl fancy-script2 text-[#1698c8] hover:text-[#5a7be6] cursor-pointer">
+                    <HashLink smooth to="/event#competitions">
+                        Registration
+                    </HashLink>
+                </div>
                 <div className='text-base sm:text-xl fancy-script2 text-[#1698c8] hover:text-[#5a7be6] cursor-pointer' 
                 onClick={() => window.open("https://drive.google.com/file/d/1s-AJdS-bWzsDhJNIA22lelvz_RVImboW/view?usp=drive_link", "_blank")} >   Rules
                 </div>

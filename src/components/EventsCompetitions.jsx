@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { LuCircleArrowLeft, LuCircleArrowRight } from "react-icons/lu";
 
-import homeImg from "../assets/1.png";
-import homeImg2 from "../assets/2.png";
-import homeImg3 from "../assets/3.png";
-import register from "../assets/register.png"
+import homeImg from "../assets/1.webp";
+import homeImg2 from "../assets/2.webp";
+import homeImg3 from "../assets/3.webp";
+import register from "../assets/register.webp"
 import { useNavigate } from "react-router-dom";
 
 const HomeEvent = () => {
@@ -87,12 +87,12 @@ const HomeEvent = () => {
         >
           {/* Group 1 */}
           <div className="flex justify-center gap-6 w-full flex-shrink-0 -translate-x-315">
-            <div className="relative text-white h-[650px]">
+            <div className="relative text-white h-[670px]">
               <img src={homeImg} className="w-[360px] h-[450px] rounded-lg mt-[5rem]" />
               <div className="absolute z-[14] top-37 text-5xl fancy-script1 text-center">Kalam  <br/> (Writing Competition)</div>
-              <div className="absolute z-[14] bottom-43 text-2xl left-12 fancy-script2 text-center w-[270px]">Unleash your creativity with words and let your pen do the magic. A chance to express, inspire, and make your thoughts immortal.</div>
+              <div className="absolute z-[14] bottom-48 text-2xl left-12 fancy-script2 text-center w-[270px]">Unleash your creativity with words and let your pen do the magic. A chance to express, inspire, and make your thoughts immortal.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-1 -left-8  scale-175"  />
+                <img src={register} className="absolute bottom-6 -left-8  scale-175"  />
               </div>
             </div>
             <div className="relative text-white h-[650px]">
@@ -103,12 +103,12 @@ const HomeEvent = () => {
                 <img src={register} className="absolute bottom-20 -left-8  scale-175"  />
               </div>
             </div>
-            <div className="relative text-white h-[650px]">
+            <div className="relative text-white h-[670px]">
               <img src={homeImg3} className="w-[360px] h-[450px] rounded-lg mt-[5rem]" />
               <div className="absolute z-[14] top-45 left-17 text-5xl fancy-script1 text-center">Aaja Bhidle <br/>(Debate) </div>
-              <div className="absolute z-[14] bottom-50 text-2xl left-10 fancy-script2 text-center w-[270px]">Step up with your logic, wit, and courage to clash with ideas. Win not just with words, but with the power of persuasion.</div>
+              <div className="absolute z-[14] bottom-55 text-2xl left-10 fancy-script2 text-center w-[270px]">Step up with your logic, wit, and courage to clash with ideas. Win not just with words, but with the power of persuasion.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-175"  />
+                <img src={register} className="absolute bottom-[23px] -left-11  scale-175"  />
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ const HomeEvent = () => {
               <div className="absolute z-[14] top-40 left-18 text-5xl fancy-script1 text-center">Sukkon-E-  <br/>Shaam <br/>(Mushaira)</div>
               <div className="absolute z-[14] bottom-42 text-2xl left-10 fancy-script2 text-center w-[270px]">An evening of soulful poetry, laughter, and emotions. Celebrate the beauty of Urdu and Hindi verses under one roof.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-175"  />
+                <img src={register} className="absolute bottom-[3px] -left-11 scale-175"  />
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@ const HomeEvent = () => {
               <div className="absolute z-[14] top-40 left-26 text-5xl fancy-script1 text-center">Frame <br/>Clickers </div>
               <div className="absolute z-[14] bottom-50 text-2xl left-10 fancy-script2 text-center w-[270px]">One click, endless stories! Bring your vision to life through photography and frame the moments that speak louder than words.</div>
               <div onClick={() => (navigate("/registration")) }>
-                <img src={register} className="absolute bottom-[3px] -left-8  scale-175"  />
+                <img src={register} className="absolute bottom-[3px] -left-11 scale-175"  />
               </div>
             </div>
           </div>

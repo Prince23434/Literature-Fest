@@ -35,23 +35,25 @@
   border: 1px solid black;
 }
 @font-face {
-    font-family: 'Fineday';
-    src: local('Fineday Style Two non-connect'), local('Fineday-Style-Two-non-connect'),
-        url('./assets/fonts/Fineday-StyleTwonon-connect.woff2') format('woff2'),
-        url('./assets/fonts/Fineday-StyleTwonon-connect.woff') format('woff'),
-        url('./assets/fonts/Fineday-StyleTwonon-connect.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Fineday';
+  src: local('Fineday Style Two non-connect'), local('Fineday-Style-Two-non-connect'),
+       url('/fonts/Fineday-StyleTwonon-connect.woff2') format('woff2'),
+       url('/fonts/Fineday-StyleTwonon-connect.woff') format('woff'),
+       url('/fonts/Fineday-StyleTwonon-connect.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "Monotype_Corsiva";            
-  src: url("./assets/fonts/monotype\ corsiva.TTF") format("truetype");
+  src: url('/fonts/monotype corsiva.TTF') format("truetype");
   font-weight: normal;                     
   font-style: normal;                     
-}/* Regular */
+}
+
+/* Regular */
 @font-face {
   font-family: 'Monotype Corsiva';
-  src: url('./assets/fonts/Monotype-Corsiva-Regular.ttf') format('truetype');
+  src: url('/fonts/Monotype-Corsiva-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -59,7 +61,7 @@
 /* Italic */
 @font-face {
   font-family: 'Monotype Corsiva';
-  src: url('./assets/fonts/Monotype-Corsiva-Regular-Italic.ttf') format('truetype');
+  src: url('/fonts/Monotype-Corsiva-Regular-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
@@ -67,7 +69,7 @@
 /* Bold */
 @font-face {
   font-family: 'Monotype Corsiva';
-  src: url('./assets/fonts/Monotype-Corsiva-Bold.ttf') format('truetype');
+  src: url('/fonts/Monotype-Corsiva-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -75,7 +77,7 @@
 /* Bold Italic */
 @font-face {
   font-family: 'Monotype Corsiva';
-  src: url('./assets/fonts/Monotype-Corsiva-Bold-Italic.ttf') format('truetype');
+  src: url('/fonts/Monotype-Corsiva-Bold-Italic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }

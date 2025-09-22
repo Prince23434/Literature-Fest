@@ -1,5 +1,5 @@
-import homeImage from '../assets/homeImage.jpg'
-import logo from '../assets/logo.png'
+import homeImage from '../assets/homeImage.webp'
+import logo from '../assets/logo.webp'
 import homeCityImage from '../assets/temple.webp'
 
 const Home = ({title}) => {

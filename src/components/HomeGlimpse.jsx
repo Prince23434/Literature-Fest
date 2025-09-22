@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import glip1 from '../assets/glimpse1.png'
-import glip2 from '../assets/glimpse2.png'
-import glip3 from '../assets/glimpse3.png'
+import glip1 from '../assets/glimpse1.webp'
+import glip2 from '../assets/glimpse2.webp'
+import glip3 from '../assets/glimpse3.webp'
 import InstagramEmbed from "../data/InstagramEmbed";
 
 const HomeGlimpse = () => {

@@ -1,9 +1,9 @@
 import { LuCircleArrowLeft } from "react-icons/lu";
 import { LuCircleArrowRight } from "react-icons/lu";
-import rap from '../assets/events/rap.png'
-import frame from '../assets/events/frame.png'
-import open from '../assets/events/open.png'
-import writing from '../assets/events/writing.png'
+import rap from '../assets/events/rap.webp'
+import frame from '../assets/events/frame.webp'
+import open from '../assets/events/open.webp'
+import writing from '../assets/events/writing.webp'
 import { useEffect, useState } from "react";
 
 const HomeCompetitions = () => {

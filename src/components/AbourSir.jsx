@@ -1,5 +1,5 @@
-import sl from '../assets/images/sir.png'
-import road1 from '../assets/road1.png'
+import sl from '../assets/images/sir.webp'
+import road1 from '../assets/road1.webp'
 
 const AbourSir = () => {
   return (

@@ -1,12 +1,12 @@
 
-import img from '../assets/images/vinayak.jpg'
-import img1 from '../assets/authors/bhupendra.jpg'
-import img2 from '../assets/authors/jitendra.jpg'
-import img3 from '../assets/authors/faani.jpg'
-import img4 from '../assets/authors/babu.jpg'
-import img5 from '../assets/authors/tanmay.jpg'
-import img6 from '../assets/authors/aayush.jpg'
-import img7 from '../assets/authors/gautam.jpg'
+import img from '../assets/images/vinayak.webp'
+import img1 from '../assets/authors/bhupendra.webp'
+import img2 from '../assets/authors/jitendra.webp'
+import img3 from '../assets/authors/faani.webp'
+import img4 from '../assets/authors/babu.webp'
+import img5 from '../assets/authors/tanmay.webp'
+import img6 from '../assets/authors/aayush.webp'
+import img7 from '../assets/authors/gautam.webp'
 import { useEffect, useRef, useState } from "react";
 
 const HomeSpeakers = () => {
